@@ -1,83 +1,103 @@
-# 🌾 BhoomiPuthra - Smart Solar-Powered Agri-Bot 🚜☀️💧
+# 🌾 BhoomiPuthra – Solar-Powered Smart Agri-Bot 🚜⚡💧
 
-> **Empowering farmers with automation, sustainability, and intelligence.**  
-> Built with 💡 innovation, 🌱 nature, and 🔧 engineering.
+> **An intelligent, IoT-enabled multi-task farming robot powered by the sun — built to automate, monitor, and protect your crops.**
 
 ---
 
-![GitHub repo size](https://img.shields.io/github/repo-size/your-username/bhoomiputhra)
-![GitHub last commit](https://img.shields.io/github/last-commit/your-username/bhoomiputhra)
-![GitHub issues](https://img.shields.io/github/issues/your-username/bhoomiputhra)
-![License](https://img.shields.io/github/license/your-username/bhoomiputhra)
+## 🔗 Quick Links
+
+| Section | Link |
+|--------|------|
+| 📘 Project Overview | [View Overview](#-project-overview) |
+| 🎥 Live Demo | [Watch Demo Video](https://youtu.be/your-demo-video-link) |
+| 🧠 Features & Stack | [Explore Features](#-key-features) |
+| 🛠️ Circuit Diagram | [View Circuit](https://github.com/amruthabn/bhoomiputhra/blob/main/assets/circuit-diagram.png) |
+| 💻 Source Code | [ESP32 Code Folder](https://github.com/amruthabn/bhoomiputhra/tree/main/code) |
+| 📸 Project Photos | [Photos Folder](https://github.com/amruthabn/bhoomiputhra/tree/main/assets/photos) |
 
 ---
 
 ## 📘 Project Overview
 
-**BhoomiPuthra** is a solar-powered, ESP32-based smart agri-bot designed to automate and optimize farming tasks including:
+**BhoomiPuthra** is a smart agricultural robot designed to automate common farming tasks using **renewable solar energy** and **IoT-based remote monitoring**.  
+Built around **ESP32 microcontrollers**, it performs:
 
-- 🌿 Grass Cutting  
-- 🌾 Automated Seed Sowing  
-- 🌡️ Environmental Monitoring (Temperature, Humidity, Soil Moisture)  
-- 💧 Smart Water Irrigation System  
-- 🧴 Automated Pesticide Spraying  
-- ☁️ IoT-Based Remote Control & Monitoring  
-- 📷 Live Video Streaming with ESP32-CAM  
-- 🐾 Animal Detection with Night Buzzer Alert System
+- 🌿 Grass cutting  
+- 💧 Smart water irrigation  
+- 🧴 Pesticide spraying  
+- 🌡️ Soil & weather monitoring  
+- 📷 Live video streaming via ESP32-CAM  
+- 🐾 Animal detection with buzzer alert  
+- 📱 Remote control via **Dabble App** and **Blynk IoT**
 
-Built for **precision agriculture**, BhoomiPuthra helps farmers reduce manual labor, conserve resources, and farm smarter using renewable solar power.
+> Designed for real-world farms. Built by engineering students. Powered by the sun.
 
 ---
 
-## ⚙️ Tech Stack
+## ⚙️ Technology Stack
 
-| Hardware | Software |
-|----------|----------|
+| ⚡ Hardware | 🌐 Software |
+|------------|------------|
 | ESP32 (x2) | Arduino IDE |
-| ESP32-CAM | Blynk IoT Platform |
+| ESP32-CAM | Blynk IoT App |
 | DHT11 Sensor | Dabble App (Bluetooth) |
-| Soil Moisture Sensor | Firebase (optional logging) |
+| Soil Moisture Sensor | Firebase (optional) |
 | Voltage Sensor | |
-| Servo & DC Motors | |
-| Relay Module | |
+| Servo Motors | |
+| L293D Motor Driver | |
 | Solar Panel & Battery | |
 
 ---
 
 ## 🚀 Key Features
 
-- 🔋 **Solar-powered** for off-grid, eco-friendly operation  
-- 🔧 Dual **ESP32 microcontrollers** for multitasking  
-- 💦 **Automated water irrigation** based on soil moisture levels  
-- 🧴 **Pesticide spraying system** with controlled activation  
-- 📱 **Wireless Control via Dabble App** (Bluetooth) and **Blynk IoT** (Wi-Fi)  
-- 📷 **ESP32-CAM** for real-time field video streaming  
-- 🔊 **Buzzer alert system** to scare away animals at night  
-- 🌱 Smart farming tasks: sowing, spraying, cutting — all automated!
+- 🔋 Solar-powered and eco-friendly  
+- 📷 Live video feed from ESP32-CAM  
+- 🔧 Dual-processor multitasking (sensors + actuators)  
+- 💦 Automated irrigation & pesticide spraying  
+- 🐦 Buzzer system to scare animals at night  
+- 🌐 Wireless control (Bluetooth & Wi-Fi)  
+- 🔁 Real-time data updates and sensor logs  
+- 📉 Low cost, high-efficiency, scalable design
 
 ---
 
-## 🧠 Future Enhancements
+## 🧠 Future Upgrades
 
-- 🧠 AI-based plant health recognition  
-- 🧭 GPS-based smart navigation and coverage planning  
-- 🧪 Soil nutrient detection (NPK sensors)  
-- 🛰️ Drone-assisted aerial monitoring  
-- ☁️ Real-time cloud analytics dashboard  
-
----
-
-
+- 🧭 GPS-based autonomous navigation  
+- 🧠 AI-based crop health detection  
+- 🧪 Soil nutrient testing with NPK sensors  
+- ☁️ Cloud dashboard for data visualization  
+- 🚁 Drone integration for aerial monitoring
 
 ---
 
-## 🛠️ Installation & Setup
+## 📸 Project Showcase
+
+| Working Model | Circuit Diagram |
+|---------------|-----------------|
+| ![Model](https://github.com/amruthabn/bhoomiputhra/blob/main/assets/photos/robot.jpg) | ![Circuit](https://github.com/amruthabn/bhoomiputhra/blob/main/assets/circuit-diagram.png) |
+
+> *(Click images to open full view)*
+
+---
+
+## 🛠️ Installation Guide
 
 ```bash
-1. Clone this repo
-2. Open Arduino IDE
-3. Install ESP32 Board support
-4. Upload respective codes to ESP32 boards
-5. Connect modules as per circuit diagram
-6. Pair apps (Dabble/Blynk) with device
-7. Power using solar panel or battery
+1. Clone the repo:
+   git clone https://github.com/amruthabn/bhoomiputhra.git
+
+2. Open Arduino IDE → Install ESP32 board
+
+3. Upload:
+   - ESP32_1.ino → Handles movement, cutting, pumping
+   - ESP32_2.ino → Handles sensors, seeding, video
+
+4. Connect modules as per circuit diagram
+
+5. Configure:
+   - Dabble App (Bluetooth)
+   - Blynk IoT (Wi-Fi auth key)
+
+6. Power it up with solar/battery and start farming!
