@@ -67,11 +67,7 @@ Built for **precision agriculture**, BhoomiPuthra helps farmers reduce manual la
 
 ---
 
-## 📸 Project Showcase
 
-> *Insert your working model photo or GIF demo here*  
-> Example:  
-> ![Project Demo](project-demo.gif)
 
 ---
 
